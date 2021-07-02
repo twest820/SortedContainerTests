@@ -1,0 +1,11 @@
+# build results
+bin/
+obj/
+PerformanceResults/
+
+# R project files
+SortedSetsPerf.Rproj
+.Rproj.user
+
+# Visual Studio cache/options directory
+.vs/

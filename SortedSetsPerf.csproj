@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>SortedSetsPerf</RootNamespace>
+    <Version>0.0.0</Version>
+    <Company>Oregon State University</Company>
+    <Authors>Management, Algorithms, and Remote Sensing</Authors>
+    <RepositoryUrl>https://github.com/OSU-MARS/SEEM</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>GPLv3</PackageLicenseExpression>
+    <Copyright>Copyright © 2019-2021 Oregon State University</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Platforms>x64</Platforms>
+    <LangVersion>9.0</LangVersion>
+    <Description>Includes code derived from the CIPS-R 2.2.4 version of the Organon growth and yield model created by Oregon State University's Center for Intensive Planted-forest Silviculture and Management, Algorithms, and Remote Sensing.</Description>
+    <AssemblyName>SortedSetsPerf</AssemblyName>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath></OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath></OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="LICENSE.md" />
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Seem.UnitTests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WSMan.Runtime" Version="7.1.3" />
+  </ItemGroup>
+  
+</Project>

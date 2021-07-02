@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "SortedSetsPerf": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "commandLineArgs": "..\\..\\..\\..\\sortedSetsPerf.ps1"
+    }
+  }
+}
